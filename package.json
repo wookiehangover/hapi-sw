@@ -1,0 +1,32 @@
+{
+  "name": "hapi-sw",
+  "version": "1.0.0-alpha",
+  "description": "> ServiceWorker generation plugin for Hapi.js",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard",
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "wookiehangover",
+  "license": "ISC",
+  "dependencies": {
+    "hoek": "^4.1.0",
+    "joi": "^9.2.0",
+    "sw-precache": "^4.2.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "hapi": "^15.2.0",
+    "mocha": "^3.1.2",
+    "standard": "^8.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wookiehangover/hapi-sw.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wookiehangover/hapi-sw/issues"
+  },
+  "homepage": "https://github.com/wookiehangover/hapi-sw#readme"
+}

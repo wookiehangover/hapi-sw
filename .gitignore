@@ -1,0 +1,10 @@
+.DS_Store*
+._.DS_Store
+.sass-cache
+node_modules
+*.key
+coverage
+.idea/
+npm-debug.log
+dist/
+lib/
