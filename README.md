@@ -57,7 +57,7 @@ server.route({
   path: '/',
   config: {
     plugins: {
-      'sw': {
+      sw: {
           dynamicUrlToDependencies: [
             './templates/homepage.html',
             './templates/layout.html'
