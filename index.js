@@ -79,8 +79,6 @@ internals.reduceRouteConfig = function (settings, route) {
       }, {})
 }
 
-const registrationPath = path.resolve(`${__dirname}/service-worker-registration.js`)
-
 function ServiceWorkerPlugin (server, options, callback) {
   Joi.validate(options, internals.globalOptionsSchema, (err, config) => {
     if (err) {
@@ -130,7 +128,8 @@ function ServiceWorkerPlugin (server, options, callback) {
         }]
       },
       handler (request, reply) {
-        reply(request.pre.sw).type('application/javascript')
+        reply(request.pre.sw)
+          .type('application/javascript')
       }
     },
     {
@@ -140,7 +139,9 @@ function ServiceWorkerPlugin (server, options, callback) {
         auth: false
       },
       handler (request, reply) {
-        reply(fs.createReadStream(require.resolve('./service-worker-registration.js'), 'utf8'))
+        const file = fs.createReadStream(require.resolve('./service-worker-registration.js'), 'utf8')
+        reply(file)
+          .type('application/javascript')
       }
     }])
 
