@@ -12,6 +12,9 @@ server.register([
     register: require('../'),
     options: {
       verbose: true,
+      staticFileGlobs: [
+        '*.css'
+      ],
       runtimeCaching: [
             {
               urlPattern: /https:\/\/unsplash.it\//,
