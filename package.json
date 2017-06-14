@@ -12,7 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "hoek": "^4.1.0",
-    "joi": "^9.2.0",
+    "joi": "10.5.2",
     "sw-precache": "5.2.0"
   },
   "devDependencies": {
