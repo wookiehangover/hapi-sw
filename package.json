@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "chai": "4.1.2",
-    "hapi": "16.4.3",
+    "hapi": "16.7.0",
     "inert": "^4.0.2",
     "mocha": "10.0.0",
     "standard": "17.0.0"
